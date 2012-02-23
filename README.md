@@ -16,7 +16,9 @@ Wikilanguages has:
 
 - basic stats for Wikipeidas for each of the languages (# of articles, etc)
 
-- language groups (to be added)
+- language groups
+
+- function to load list of languages (wiki prefixes) from arbitrary structured text file with comments (# used as comment)
 
 Install
 -------
@@ -48,3 +50,5 @@ Usage
 `>>> langs["ru"]`
 
 `{'stats': {'articles': u'"802,956"', 'active_users': u'"11,901"'}, 'name': u'Russian', 'script': {'rendering': u'', 'direction': u'ltr', 'non_latin': u'yes', 'constructed': u'no'}, 'number': u'8', 'native_name': u'\u0420\u0443\u0441\u0441\u043a\u0438\u0439', 'group': u'Slavic', 'size': u'100 000+ articles'}`
+
+`>>> slavic_langs=wikilanguages.load('slavic_wiki_prefixes.txt')`

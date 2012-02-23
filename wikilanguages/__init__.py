@@ -85,3 +85,26 @@ for i, line in enumerate(data.split('\n')):
 
 #print langs
 #print groups
+
+import re
+
+def load (filename):
+#loads list of languages from text file, # can be used to comment entire lines or inside lines
+	langs=[]
+	
+	f=open(filename)
+	for line in f:
+		# skip comments
+		if line[0]=="#":
+			continue
+		# remove content after inline comments
+		if line.find("#")>0:
+			line=line[0:line.find("#")]
+
+		items=re.findall('[a-z-]+', line)
+		
+		#add all elements to languages list, and then keeping only unique values
+		langs=list(set(list(langs+items)))
+				
+	return langs	
+	
