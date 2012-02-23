@@ -5,13 +5,16 @@ try:
 	import pkgutil
 	langs_data = pkgutil.get_data(__name__, 'resources/wikilanguages.txt')
 	scripts_data = pkgutil.get_data(__name__, 'resources/scripts.txt')
+	groups_data = pkgutil.get_data(__name__, 'resources/groups.txt')
 except ImportError:
 	import pkg_resources
 	langs_data = pkg_resources.resource_string(__name__, 'resources/wikilanguages.txt')
 	scripts_data = pkg_resources.resource_string(__name__, 'resources/scripts.txt')
+	groups_data = pkg_resources.resource_string(__name__, 'resources/groups.txt')
 
 
 langs={}
+groups={}
 
 # wikilanguages.txt
 #№	Language	Language (local)	Wiki	Articles	Total	Edits	Admins	Users	Active Users	Images	Depth	Date	Class
@@ -55,5 +58,30 @@ for i, line in enumerate(data.split('\n')):
 	
 	langs[lang]["script"]={"direction":direction, "non_latin": non_latin, "rendering":rendering, "constructed":constructed}
 
+# groups.txt
+# Group Wiki
+
+data=groups_data.decode('utf-16')
+
+for i, line in enumerate(data.split('\n')):
+	#skip headers
+	if i==0: pass
+	
+	line=line.strip()
+	tabs=line.split('\t')
+	
+	group=tabs[0]
+	lang=tabs[1]
+	
+	# add only languages that are active Wikipedias (e.g. already loaded into langs dictionary
+	if lang in langs:
+		langs[lang]["group"]=group
+	
+	if group in groups:
+		groups[group].append(lang)
+	else:
+		groups[group]=[]
+		groups[group].append(lang)
 
 #print langs
+#print groups
