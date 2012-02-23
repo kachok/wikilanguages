@@ -36,13 +36,15 @@ Data Sources
 Usage
 -----
 
-`
->>> import wikilanguages
->>> langs=wikilanguages.langs
->>> 
->>> langs["en"]
-{'stats': {'articles': u'"3,825,380"', 'active_users': u'"142,406"'}, 'name': u'English', 'script': {'rendering': u'', 'direction': u'ltr', 'non_latin': u'no', 'constructed': u'no'}, 'number': u'1', 'native_name': u'English', 'group': u'Germanic', 'size': u'1 000 000+ articles'}
->>> langs["ru"]
-{'stats': {'articles': u'"802,956"', 'active_users': u'"11,901"'}, 'name': u'Russian', 'script': {'rendering': u'', 'direction': u'ltr', 'non_latin': u'yes', 'constructed': u'no'}, 'number': u'8', 'native_name': u'\u0420\u0443\u0441\u0441\u043a\u0438\u0439', 'group': u'Slavic', 'size': u'100 000+ articles'}
->>>
-` 
+
+`>>> import wikilanguages`
+
+`>>> langs=wikilanguages.langs`
+
+`>>> langs["en"]`
+
+`{'stats': {'articles': u'"3,825,380"', 'active_users': u'"142,406"'}, 'name': u'English', 'script': {'rendering': u'', 'direction': u'ltr', 'non_latin': u'no', 'constructed': u'no'}, 'number': u'1', 'native_name': u'English', 'group': u'Germanic', 'size': u'1 000 000+ articles'}`
+
+`>>> langs["ru"]`
+
+`{'stats': {'articles': u'"802,956"', 'active_users': u'"11,901"'}, 'name': u'Russian', 'script': {'rendering': u'', 'direction': u'ltr', 'non_latin': u'yes', 'constructed': u'no'}, 'number': u'8', 'native_name': u'\u0420\u0443\u0441\u0441\u043a\u0438\u0439', 'group': u'Slavic', 'size': u'100 000+ articles'}`
