@@ -27,11 +27,8 @@ python ./setup.py install
 Data Sources
 ____________
 
-*List of Wikipedias
-http://meta.wikimedia.org/wiki/List_of_Wikipedias
+* [List of Wikipedias] (http://meta.wikimedia.org/wiki/List_of_Wikipedias)
 
-*List of Wikipedias by language group
-http://meta.wikimedia.org/wiki/List_of_Wikipedias_by_language_group
+* [List of Wikipedias by language group] (http://meta.wikimedia.org/wiki/List_of_Wikipedias_by_language_group)
 
-*List of Wikipedias by speakers per article
-http://meta.wikimedia.org/wiki/List_of_Wikipedias_by_speakers_per_article
+* [List of Wikipedias by speakers per article] (http://meta.wikimedia.org/wiki/List_of_Wikipedias_by_speakers_per_article)
