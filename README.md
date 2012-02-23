@@ -25,7 +25,7 @@ python ./setup.py install
 
 
 Data Sources
-____________
+------------
 
 * [List of Wikipedias] (http://meta.wikimedia.org/wiki/List_of_Wikipedias)
 
