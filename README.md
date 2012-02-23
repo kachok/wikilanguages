@@ -1,5 +1,5 @@
 Wikilanguages
-=========
+=============
 
 Wikilanguages is a Python library to manipulate with all the languages used in Wikipedia projects
 
