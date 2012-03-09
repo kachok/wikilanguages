@@ -23,7 +23,9 @@ data=langs_data.decode('utf-16')
 
 for i,line in enumerate(data.split('\n')):
 	#skip headers
-	if i==0: pass
+	if i==0: continue
+
+	print i, line
 
 	line=line.strip()
 	tabs=line.split('\t')
@@ -45,7 +47,7 @@ data=scripts_data.decode('utf-16')
 
 for i, line in enumerate(data.split('\n')):
 	#skip headers
-	if i==0: pass
+	if i==0: continue
 	
 	line=line.strip()
 	tabs=line.split('\t')
@@ -65,7 +67,7 @@ data=groups_data.decode('utf-16')
 
 for i, line in enumerate(data.split('\n')):
 	#skip headers
-	if i==0: pass
+	if i==0: continue
 	
 	line=line.strip()
 	tabs=line.split('\t')
